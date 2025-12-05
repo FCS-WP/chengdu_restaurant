@@ -1,0 +1,114 @@
+.text-line-before,
+.text-line-both {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--e-global-color-d826794);
+}
+
+.text-line-before::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: var(--e-global-color-d826794);
+}
+
+.text-line-both {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--e-global-color-d826794);
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--e-global-color-d826794);
+  }
+}
+
+.banner-silder .elementor-slides-wrapper .elementor-slide-heading {
+    margin-top: 160px;
+}
+
+.img-with-banner {
+  position: relative;
+  .banner-info {
+    h3 {
+      margin: 0;
+    }
+  }
+  @include tablet {
+    .banner-info {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  @include desktop {
+    .banner-info {
+      top: 65%;
+      left: 55%;
+      bottom: auto;
+    }
+  }
+}
+
+// Foods-slider
+.foods-slider-container {
+  .slick-initialized {
+    .slick-slide {
+      margin: 0 15px;
+      opacity: 0.5;
+      transition: all 0.5s ease;
+      img {
+        height: 280px;
+        width: 530px;
+        object-fit: cover;
+        margin-top: 16px;
+        transition: all 0.5s ease;
+      }
+      .elementor-heading-title {
+        margin-top: 20px;
+      }
+      &.slick-active {
+        opacity: 1;
+        img {
+          height: 320px;
+          width: 570px;
+          margin-top: 0;
+        }
+      }
+    }
+    .slick-prev {
+      z-index: 9;
+      margin-left: 8%;
+      padding: 20px 12px 23px;
+      border-radius: 32px;
+      background-color: var(--e-global-color-secondary);
+      &::before {
+        content: "❮";
+        opacity: 1;
+        line-height: 0;
+      }
+    }
+    .slick-next {
+      z-index: 9;
+      margin-right: 8%;
+      padding: 20px 12px 23px;
+      border-radius: 32px;
+      background-color: var(--e-global-color-secondary);
+      &::before {
+        content: "❯";
+        opacity: 1;
+        line-height: 0;
+      }
+    }
+  }
+}

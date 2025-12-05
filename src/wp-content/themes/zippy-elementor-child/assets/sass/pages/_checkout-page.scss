@@ -1,0 +1,24 @@
+.woocommerce-checkout {
+    font-family: var(--e-global-typography-primary-font-family);
+  .woocommerce-checkout-payment {
+    .button {
+      background-color: var(--e-global-color-secondary) !important;
+      border-radius: 8px !important;
+      font-weight: 500 !important;
+      font-size: 18px !important;
+      &:hover {
+        color: #000 !important;
+        font-size: 18px !important;
+      }
+    }
+  }
+  tr {
+      td,
+      th {
+        color: #000 !important;
+        span, p, a, bdi {
+          color: #000 !important;
+        }
+      }
+    }
+}
