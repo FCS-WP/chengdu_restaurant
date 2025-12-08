@@ -89,6 +89,17 @@
         }
       }
     }
+    .elementor-widget-heading {
+      display: flex;
+      justify-content: center;
+      .elementor-widget-container {
+        width: fit-content;
+        border-bottom: 1px solid var(--e-global-color-d826794);
+        h4 {
+          padding-bottom: 5px;
+        }
+      }
+    }
     .slick-prev {
       z-index: 9;
       margin-left: 8%;
