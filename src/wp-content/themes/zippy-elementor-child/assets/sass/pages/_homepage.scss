@@ -34,7 +34,10 @@
 }
 
 .banner-silder .elementor-slides-wrapper .elementor-slide-heading {
-    margin-top: 160px;
+  margin-top: 140px;
+  @include tablet {
+    margin-top: 100px;
+  }
 }
 
 .img-with-banner {
@@ -54,7 +57,7 @@
   @include desktop {
     .banner-info {
       top: 65%;
-      left: 55%;
+      left: 60%;
       bottom: auto;
     }
   }
