@@ -1,8 +1,44 @@
 .text-mb-0 {
-    p, h1, h2, h3, h4, h5, h6, span, a {
-        margin-bottom: 0 !important;
-    }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  a {
+    margin-bottom: 0 !important;
+  }
 }
+
 .elementor-location-footer .elementor-element .elementor-icon-list-items {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+.whatsapp-button {
+	z-index: 9999 !important;
+  position: fixed !important;
+  bottom: 60px !important;
+  right: 20px !important;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 30px;
+  background-color: #26D466 !important;
+  border-color: #26D466 !important;
+  svg {
+    fill: #fff;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.header-menu-mobile {
+  button.jkit-hamburger-menu,
+  button.jkit-close-menu {
+    background-color: unset !important;
+  }
+  .jki-angle-down-solid {
+    border: 0 !important;
+  }
 }
