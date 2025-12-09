@@ -3,6 +3,10 @@
   list-style-type: none;
 }
 
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+	z-index: 1;
+}
+
 .whatsapp-button {
 	z-index: 9999 !important;
   position: fixed !important;
